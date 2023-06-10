@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(13, 86, 132);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+.waviy {
+    /* justify-content: top left; */
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+.symbol{
+    font-size: 16vw;
+    color: white;
+}
+.container{
+    position: 500px right;
+    max-width: 500px;
+    background: black;
+    border-radius: 8vmin;
+    box-shadow: 0px 0px 15px 3px white;
+    font-family: sans-serif;
+    padding: 2vw;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 0vh 0vw;
+}
+h1{
+    color: white;
+    letter-spacing: 0.05vw;
+    font-size: 2vw;
+}
+#celcius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+input{
+    flex: 5;
+    height: 5vh;
+    width: 3vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 1vw;
+}
+
+/* for chrome, safari, edge, opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* for mozila firefox */
+input{
+    -moz-appearance: textfield;
+}
+
+.icon{
+    flex: 1;
+    height: 5vh;
+    width: 3vw;
+    line-height: 5vh;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #4d5964;
+    color: white;
+    border-radius: 0 8px 8px 0;
+}
+.button{
+    margin-top: 2vh;
+    text-align: center;
+}
+.button button{
+    border: none;
+    outline: none;
+    padding: 0.5vh 1.5vw;
+    font-size: 1.7vw;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button button:hover{
+    background: #4d5964;
+    color: white;
+}
